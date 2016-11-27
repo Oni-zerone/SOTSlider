@@ -475,12 +475,12 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
                 if (position.x > 8) && position.x <= self.frame.width - (self.leftSlider!.frame.width + 8) {
                     self.leftSliderPositionConstraint?.constant = position.x;
                     
-                    self.backgroundColor = self.leftColor.withAlphaComponent(position.x / (self.frame.width / 6 * 5));
+                    self.backgroundColor = self.leftColor.withAlphaComponent(position.x / (self.frame.width / 8 * 5));
                 }
                 break;
                 
             default:
-                if position.x >= (self.frame.width / 6 * 5) {
+                if position.x >= (self.frame.width / 8 * 5) {
                     //Success Left Slide
                     self.sliderStatus = .leftSuccess;
                     
@@ -509,12 +509,12 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
                 if (position.x < -8) && position.x >= (self.leftSlider!.frame.width + 8) - self.frame.width {
                     self.rightSliderPositionConstraint?.constant = position.x;
                     
-                    self.backgroundColor = self.rightColor.withAlphaComponent( -position.x / (self.frame.width / 6 * 5));
+                    self.backgroundColor = self.rightColor.withAlphaComponent( -position.x / (self.frame.width / 8 * 5));
                 }
                 break;
                 
             default:
-                if position.x <= (-self.frame.width / 6 * 5) {
+                if position.x <= (-self.frame.width / 8 * 5) {
                     //Success Right slide
                     self.sliderStatus = .rightSuccess;
                     
