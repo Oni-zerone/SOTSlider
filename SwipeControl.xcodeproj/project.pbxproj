@@ -40,7 +40,7 @@
 		97614D5C1D058D28003E8667 = {
 			isa = PBXGroup;
 			children = (
-				97614D671D058D28003E8667 /* SliderProject */,
+				97614D671D058D28003E8667 /* SwipeControl */,
 				97614D661D058D28003E8667 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97614D671D058D28003E8667 /* SliderProject */ = {
+		97614D671D058D28003E8667 /* SwipeControl */ = {
 			isa = PBXGroup;
 			children = (
 				97614D681D058D28003E8667 /* AppDelegate.swift */,
@@ -64,7 +64,7 @@
 				97614D741D058D29003E8667 /* Info.plist */,
 				97614D7A1D058D54003E8667 /* Slider */,
 			);
-			path = SliderProject;
+			path = SwipeControl;
 			sourceTree = "<group>";
 		};
 		97614D7A1D058D54003E8667 /* Slider */ = {
