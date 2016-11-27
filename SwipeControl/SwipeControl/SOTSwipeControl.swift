@@ -409,6 +409,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         let lImage = UIImageView(frame: CGRect.zero);
         lImage.backgroundColor = UIColor.clear;
         lImage.translatesAutoresizingMaskIntoConstraints = false;
+        lImage.contentMode = .scaleAspectFit;
         lSlider.addSubview(lImage);
         lImage.tintColor = UIColor.white;
         self.leftImageView = lImage;
@@ -416,6 +417,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         let rImage = UIImageView(frame: CGRect.zero);
         rImage.backgroundColor = UIColor.clear;
         rImage.translatesAutoresizingMaskIntoConstraints = false;
+        rImage.contentMode = .scaleAspectFit;
         rSlider.addSubview(rImage);
         rImage.tintColor = UIColor.white;
         self.rightImageView = rImage;
