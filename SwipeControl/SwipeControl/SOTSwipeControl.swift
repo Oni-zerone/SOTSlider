@@ -39,6 +39,12 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         }
     }
 
+@IBInspectable var leftEnabled: Bool = true {
+        didSet {
+            self.leftSlider?.isHidden = !leftEnabled;
+        }
+    }
+
 @IBInspectable var leftSwipeText:String = "Left Swipe text" {
         didSet {
             if self.sliderStatus == .leftActive {
@@ -55,6 +61,12 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+@IBInspectable var rightEnabled: Bool = true {
+        didSet {
+            self.rightSlider?.isHidden = !rightEnabled;
+        }
+    }
+
 @IBInspectable var rightSwipeText:String = "Right Swipe text" {
         didSet {
             if self.sliderStatus == .rightActive {
@@ -86,7 +98,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     var sliderStatus:SOTSliderStatus = .normal {
         didSet {
             
-            //CallBacks
+            //Callbacks
             if let delegate = self.delegate as? NSObject {
                 
                 switch self.sliderStatus {
@@ -114,7 +126,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
             }
             
             
-            //Aminations
+            //Animations
             UIView.animate(withDuration: 0.4, delay: 0.0, options: .allowUserInteraction, animations: {
 
                 switch self.sliderStatus {
@@ -196,18 +208,6 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
                 }) { (finished) in
                     
             }
-        }
-    }
-    
-    var leftEnabled: Bool = true {
-        didSet {
-            self.leftSlider?.isHidden = !leftEnabled;
-        }
-    }
-    
-    var rightEnabled: Bool = true {
-        didSet {
-            self.rightSlider?.isHidden = !rightEnabled;
         }
     }
     
