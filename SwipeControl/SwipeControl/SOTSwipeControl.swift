@@ -85,7 +85,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     
     @IBInspectable var leftImage: UIImage? {
         set {
-            self.leftImageView?.image = leftImage?.withRenderingMode(.alwaysTemplate);
+            self.leftImageView?.image = newValue?.withRenderingMode(.alwaysTemplate);
         }
         get {
             return self.leftImageView?.image;
@@ -116,7 +116,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
 
     @IBInspectable var rightImage: UIImage? {
         set {
-            self.rightImageView?.image = rightImage?.withRenderingMode(.alwaysTemplate);
+            self.rightImageView?.image = newValue?.withRenderingMode(.alwaysTemplate);
         }
         get {
             return self.rightImageView?.image;
