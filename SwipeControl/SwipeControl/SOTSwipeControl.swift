@@ -15,58 +15,63 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     //Model
     weak var delegate:SOTSwipeControlDelegate?;
     
-    var leftColor:UIColor = UIColor.red {
+@IBInspectable var leftColor:UIColor = UIColor.red {
         didSet {
             leftSlider?.backgroundColor = leftColor;
         }
     }
-    var rightColor:UIColor = UIColor.blue {
+@IBInspectable var rightColor:UIColor = UIColor.blue {
         didSet {
             rightSlider?.backgroundColor = rightColor;
         }
     }
-    var textColor:UIColor = UIColor.lightGray {
+@IBInspectable var textColor:UIColor = UIColor.lightGray {
         didSet {
             label?.textColor = textColor;
         }
     }
     
-    var normalText:String = "Normal text" {
+@IBInspectable var normalText:String = "Normal text" {
         didSet {
             if self.sliderStatus == .normal {
                 self.label?.text = normalText;
             }
         }
     }
-    var leftSwipeText:String = "Left Swipe text" {
+
+@IBInspectable var leftSwipeText:String = "Left Swipe text" {
         didSet {
             if self.sliderStatus == .leftActive {
                 self.label?.text = leftSwipeText;
             }
         }
     }
-    var leftSuccessText:String = "Left Completed text" {
+    
+@IBInspectable var leftSuccessText:String = "Left Completed text" {
         didSet {
             if self.sliderStatus == .leftSuccess {
                 self.label?.text = leftSuccessText;
             }
         }
     }
-    var rightSwipeText:String = "Right Swipe text" {
+    
+@IBInspectable var rightSwipeText:String = "Right Swipe text" {
         didSet {
             if self.sliderStatus == .rightActive {
                 self.label?.text = rightSwipeText;
             }
         }
     }
-    var rightSuccessText:String = "Right Completed text" {
+    
+@IBInspectable var rightSuccessText:String = "Right Completed text" {
         didSet {
             if self.sliderStatus == .rightSuccess {
                 self.label?.text = rightSuccessText;
             }
         }
     }
-    var completedText:String = "Completed text"  {
+    
+@IBInspectable var completedText:String = "Completed text"  {
         didSet {
             if self.sliderStatus == .complete {
                 self.label?.text = completedText;
