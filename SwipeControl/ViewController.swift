@@ -18,12 +18,9 @@ class ViewController: UIViewController, SOTSwipeControlDelegate {
         
         self.view.backgroundColor = UIColor.white;
         slider.delegate = self;
-        
-        slider.setLeftImage(UIImage(named: "TestImage"));
-        slider.setRightImage(UIImage(named: "TestImage"));
-        
+                
         slider.isAsync = true;
-        slider.rightEnabled = false;
+        slider.rightEnabled = true;
     }
 
     override func didReceiveMemoryWarning() {
