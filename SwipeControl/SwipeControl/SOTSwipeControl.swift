@@ -83,6 +83,15 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         }
     }
     
+    @IBInspectable var leftImage: UIImage? {
+        set {
+            self.leftImageView?.image = leftImage?.withRenderingMode(.alwaysTemplate);
+        }
+        get {
+            return self.leftImageView?.image;
+        }
+    }
+    
     @IBInspectable var rightEnabled: Bool = true {
         didSet {
             self.rightSlider?.isHidden = !rightEnabled;
@@ -104,7 +113,16 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
             }
         }
     }
-    
+
+    @IBInspectable var rightImage: UIImage? {
+        set {
+            self.rightImageView?.image = rightImage?.withRenderingMode(.alwaysTemplate);
+        }
+        get {
+            return self.rightImageView?.image;
+        }
+    }
+
     @IBInspectable var completedText:String = "Completed text"  {
         didSet {
             if self.sliderStatus == .complete {
@@ -439,15 +457,6 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         
         self.setNeedsLayout();
     }
-    
-    func setLeftImage(_ image: UIImage!) {
-        self.leftImageView?.image = image.withRenderingMode(.alwaysTemplate);
-    }
-    
-    func setRightImage(_ image: UIImage!) {
-        self.rightImageView?.image = image.withRenderingMode(.alwaysTemplate);
-    }
-    
     
     //MARK: Gesture Actions
     func leftGesture(_ sender:UIPanGestureRecognizer?) {
