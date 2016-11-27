@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		97614D651D058D28003E8667 /* SliderProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97614D651D058D28003E8667 /* SwipeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97614D681D058D28003E8667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97614D6A1D058D28003E8667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97614D6D1D058D29003E8667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		97614D661D058D28003E8667 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97614D651D058D28003E8667 /* SliderProject.app */,
+				97614D651D058D28003E8667 /* SwipeControl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		97614D641D058D28003E8667 /* SliderProject */ = {
+		97614D641D058D28003E8667 /* SwipeControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97614D771D058D29003E8667 /* Build configuration list for PBXNativeTarget "SliderProject" */;
+			buildConfigurationList = 97614D771D058D29003E8667 /* Build configuration list for PBXNativeTarget "SwipeControl" */;
 			buildPhases = (
 				97614D611D058D28003E8667 /* Sources */,
 				97614D621D058D28003E8667 /* Frameworks */,
@@ -90,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = SliderProject;
+			name = SwipeControl;
 			productName = SliderProject;
-			productReference = 97614D651D058D28003E8667 /* SliderProject.app */;
+			productReference = 97614D651D058D28003E8667 /* SwipeControl.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 97614D601D058D28003E8667 /* Build configuration list for PBXProject "SliderProject" */;
+			buildConfigurationList = 97614D601D058D28003E8667 /* Build configuration list for PBXProject "SwipeControl" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97614D641D058D28003E8667 /* SliderProject */,
+				97614D641D058D28003E8667 /* SwipeControl */,
 			);
 		};
 /* End PBXProject section */
@@ -282,7 +282,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97614D601D058D28003E8667 /* Build configuration list for PBXProject "SliderProject" */ = {
+		97614D601D058D28003E8667 /* Build configuration list for PBXProject "SwipeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97614D751D058D29003E8667 /* Debug */,
@@ -291,13 +291,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97614D771D058D29003E8667 /* Build configuration list for PBXNativeTarget "SliderProject" */ = {
+		97614D771D058D29003E8667 /* Build configuration list for PBXNativeTarget "SwipeControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97614D781D058D29003E8667 /* Debug */,
 				97614D791D058D29003E8667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SliderProject.xcodeproj">
+      location = "self:/Users/Oni_01/Documents/JOBS/Personal/Playgrounds/SOTSlider/SwipeControl.xcodeproj">
    </FileRef>
 </Workspace>
