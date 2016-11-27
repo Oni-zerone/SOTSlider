@@ -16,7 +16,7 @@ class ViewController: UIViewController, SOTSwipeControlDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.whiteColor();
+        self.view.backgroundColor = UIColor.white;
         slider.delegate = self;
         
         slider.setLeftImage(UIImage(named: "TestImage"));
@@ -33,16 +33,16 @@ class ViewController: UIViewController, SOTSwipeControlDelegate {
 
     //MARK: Slide Delegate
     
-    func didSuccessSwipe(slider: SOTSwipeControl) {
-        let alertText = slider.sliderStatus == .LeftSuccess ? "Left swipe with success!" : "Right swipe with success!";
+    func didSuccessSwipe(_ slider: SOTSwipeControl) {
+        let alertText = slider.sliderStatus == .leftSuccess ? "Left swipe with success!" : "Right swipe with success!";
         
-        let alert = UIAlertController(title: "Completed swipe with Success!", message: alertText, preferredStyle: .Alert);
-        alert.addAction(UIAlertAction(title: "Complete!", style: .Default, handler: { (action) in
-            self.slider.sliderStatus = .Normal;
+        let alert = UIAlertController(title: "Completed swipe with Success!", message: alertText, preferredStyle: .alert);
+        alert.addAction(UIAlertAction(title: "Complete!", style: .default, handler: { (action) in
+            self.slider.sliderStatus = .normal;
         }));
         
-        self.presentViewController(alert, animated: true) {
-            //POBA!
+        self.present(alert, animated: true) {
+            //DO NOTHING.
         };
         
     }

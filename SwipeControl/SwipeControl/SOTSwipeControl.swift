@@ -13,17 +13,17 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     //Model
     weak var delegate:SOTSwipeControlDelegate?;
     
-    var leftColor:UIColor = UIColor.redColor() {
+    var leftColor:UIColor = UIColor.red {
         didSet {
             leftSlider?.backgroundColor = leftColor;
         }
     }
-    var rightColor:UIColor = UIColor.blueColor() {
+    var rightColor:UIColor = UIColor.blue {
         didSet {
             rightSlider?.backgroundColor = rightColor;
         }
     }
-    var textColor:UIColor = UIColor.lightGrayColor() {
+    var textColor:UIColor = UIColor.lightGray {
         didSet {
             label?.textColor = textColor;
         }
@@ -31,73 +31,73 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     
     var normalText:String = "Normal text" {
         didSet {
-            if self.sliderStatus == .Normal {
+            if self.sliderStatus == .normal {
                 self.label?.text = normalText;
             }
         }
     }
     var leftSwipeText:String = "Left Swipe text" {
         didSet {
-            if self.sliderStatus == .LeftActive {
+            if self.sliderStatus == .leftActive {
                 self.label?.text = leftSwipeText;
             }
         }
     }
     var leftSuccessText:String = "Left Completed text" {
         didSet {
-            if self.sliderStatus == .LeftSuccess {
+            if self.sliderStatus == .leftSuccess {
                 self.label?.text = leftSuccessText;
             }
         }
     }
     var rightSwipeText:String = "Right Swipe text" {
         didSet {
-            if self.sliderStatus == .RightActive {
+            if self.sliderStatus == .rightActive {
                 self.label?.text = rightSwipeText;
             }
         }
     }
     var rightSuccessText:String = "Right Completed text" {
         didSet {
-            if self.sliderStatus == .RightSuccess {
+            if self.sliderStatus == .rightSuccess {
                 self.label?.text = rightSuccessText;
             }
         }
     }
     var completedText:String = "Completed text"  {
         didSet {
-            if self.sliderStatus == .Complete {
+            if self.sliderStatus == .complete {
                 self.label?.text = completedText;
             }
         }
     }
     
-    private var gestureBegan:Bool = false;
+    fileprivate var gestureBegan:Bool = false;
     var isAsync:Bool = false;
     
     
-    var sliderStatus:SOTSliderStatus = .Normal {
+    var sliderStatus:SOTSliderStatus = .normal {
         didSet {
             
             //CallBacks
             if let delegate = self.delegate as? NSObject {
                 
                 switch self.sliderStatus {
-                case .RightSuccess, .LeftSuccess:
-                    self.userInteractionEnabled = false;
-                    if delegate.respondsToSelector(#selector(SOTSwipeControlDelegate.didSuccessSwipe(_:))) {
-                        delegate.performSelector(#selector(SOTSwipeControlDelegate.didSuccessSwipe(_:)), withObject: self);
+                case .rightSuccess, .leftSuccess:
+                    self.isUserInteractionEnabled = false;
+                    if delegate.responds(to: #selector(SOTSwipeControlDelegate.didSuccessSwipe(_:))) {
+                        delegate.perform(#selector(SOTSwipeControlDelegate.didSuccessSwipe(_:)), with: self);
                     }
                     break;
-                case .Complete:
-                    if delegate.respondsToSelector(#selector(SOTSwipeControlDelegate.didCompletedSwipe(_:))) {
-                        delegate.performSelector(#selector(SOTSwipeControlDelegate.didCompletedSwipe(_:)), withObject: self);
+                case .complete:
+                    if delegate.responds(to: #selector(SOTSwipeControlDelegate.didCompletedSwipe(_:))) {
+                        delegate.perform(#selector(SOTSwipeControlDelegate.didCompletedSwipe(_:)), with: self);
                     }
                     break;
                     
                     
-                case .Normal:
-                    self.userInteractionEnabled = true;
+                case .normal:
+                    self.isUserInteractionEnabled = true;
                     break;
                     
                 default:
@@ -108,19 +108,19 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
             
             
             //Aminations
-            UIView.animateWithDuration(0.4, delay: 0.0, options: .AllowUserInteraction, animations: {
+            UIView.animate(withDuration: 0.4, delay: 0.0, options: .allowUserInteraction, animations: {
 
                 switch self.sliderStatus {
-                case .Normal:
-                    self.backgroundColor = UIColor.clearColor();
-                    self.layer.borderColor = UIColor.clearColor().CGColor;
+                case .normal:
+                    self.backgroundColor = UIColor.clear;
+                    self.layer.borderColor = UIColor.clear.cgColor;
                     self.layer.borderWidth = 0;
                     self.leftSlider?.backgroundColor = self.leftColor;
-                    self.leftSlider?.hidden = !self.leftEnabled;
-                    self.leftImageView?.tintColor = UIColor.whiteColor();
+                    self.leftSlider?.isHidden = !self.leftEnabled;
+                    self.leftImageView?.tintColor = UIColor.white;
                     self.rightSlider?.backgroundColor = self.rightColor;
-                    self.rightSlider?.hidden = !self.rightEnabled;
-                    self.rightImageView?.tintColor = UIColor.whiteColor();
+                    self.rightSlider?.isHidden = !self.rightEnabled;
+                    self.rightImageView?.tintColor = UIColor.white;
                     self.label?.textColor = self.textColor;
                     self.label?.text = self.normalText;
                     
@@ -129,57 +129,57 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
                     
                     break;
                     
-                case .LeftActive:
+                case .leftActive:
                     
-                    self.backgroundColor = self.leftColor.colorWithAlphaComponent(0.1);
-                    self.layer.borderColor = self.leftColor.CGColor;
+                    self.backgroundColor = self.leftColor.withAlphaComponent(0.1);
+                    self.layer.borderColor = self.leftColor.cgColor;
                     self.layer.borderWidth = 1;
-                    self.leftSlider?.backgroundColor = UIColor.whiteColor();
+                    self.leftSlider?.backgroundColor = UIColor.white;
                     self.leftImageView?.tintColor = self.leftColor;
-                    self.rightSlider?.hidden = true;
-                    self.label?.textColor = UIColor.whiteColor();
+                    self.rightSlider?.isHidden = true;
+                    self.label?.textColor = UIColor.white;
                     self.label?.text = self.leftSwipeText;
                     break;
                     
-                case .RightActive:
+                case .rightActive:
                     
-                    self.backgroundColor = self.rightColor.colorWithAlphaComponent(0.1);
-                    self.layer.borderColor = self.rightColor.CGColor;
+                    self.backgroundColor = self.rightColor.withAlphaComponent(0.1);
+                    self.layer.borderColor = self.rightColor.cgColor;
                     self.layer.borderWidth = 1;
-                    self.rightSlider?.backgroundColor = UIColor.whiteColor();
+                    self.rightSlider?.backgroundColor = UIColor.white;
                     self.rightImageView?.tintColor = self.rightColor;
-                    self.leftSlider?.hidden = true;
-                    self.label?.textColor = UIColor.whiteColor();
+                    self.leftSlider?.isHidden = true;
+                    self.label?.textColor = UIColor.white;
                     self.label?.text = self.rightSwipeText;
                     break;
                     
-                case .LeftSuccess:
+                case .leftSuccess:
                     
                     if self.isAsync {
                     
-                        self.leftSlider?.hidden = true;
+                        self.leftSlider?.isHidden = true;
                         self.label?.text = self.leftSuccessText
                         
                     } else {
-                        self.sliderStatus = .Normal;
+                        self.sliderStatus = .normal;
                     }
                     
                     break;
                     
-                case .RightSuccess:
+                case .rightSuccess:
                     
                     if self.isAsync {
 
-                        self.rightSlider?.hidden = true;
+                        self.rightSlider?.isHidden = true;
                         self.label?.text = self.rightSuccessText;
                         
                     } else {
-                        self.sliderStatus = .Normal;
+                        self.sliderStatus = .normal;
                     }
                     
                     break;
                     
-                case .Complete:
+                case .complete:
                     self.label?.text = self.completedText;
                     break;
                 }
@@ -194,25 +194,25 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     
     var leftEnabled: Bool = true {
         didSet {
-            self.leftSlider?.hidden = !leftEnabled;
+            self.leftSlider?.isHidden = !leftEnabled;
         }
     }
     
     var rightEnabled: Bool = true {
         didSet {
-            self.rightSlider?.hidden = !rightEnabled;
+            self.rightSlider?.isHidden = !rightEnabled;
         }
     }
     
     //Views
-    private weak var leftImageView:UIImageView?;
-    private weak var rightImageView:UIImageView?;
+    fileprivate weak var leftImageView:UIImageView?;
+    fileprivate weak var rightImageView:UIImageView?;
     weak var label:UILabel?;
     weak var leftSlider:UIView?;
     weak var rightSlider:UIView?;
     
-    private weak var leftSliderPositionConstraint:NSLayoutConstraint?;
-    private weak var rightSliderPositionConstraint:NSLayoutConstraint?;
+    fileprivate weak var leftSliderPositionConstraint:NSLayoutConstraint?;
+    fileprivate weak var rightSliderPositionConstraint:NSLayoutConstraint?;
     
     required override init(frame: CGRect) {
         super.init(frame:frame);
@@ -222,7 +222,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     }
     
     convenience init() {
-        let frame = CGRectMake(0, 0, 360, 120);
+        let frame = CGRect(x: 0, y: 0, width: 360, height: 120);
         self.init(frame: frame);
     }
     
@@ -236,12 +236,12 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     
     func setupLayout() {
         
-        self.backgroundColor = UIColor.whiteColor();
+        self.backgroundColor = UIColor.white;
         
         //Add Center text
         let label = UILabel();
-        label.textAlignment = .Center;
-        label.textColor = UIColor.lightGrayColor();
+        label.textAlignment = .center;
+        label.textColor = UIColor.lightGray;
         label.text = self.normalText;
         label.translatesAutoresizingMaskIntoConstraints = false;
         self.addSubview(label);
@@ -249,14 +249,14 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         
         //Label constraints
         let vtConstraint = NSLayoutConstraint(item: label,
-                                              attribute: .CenterY,
-                                              relatedBy: .Equal,
+                                              attribute: .centerY,
+                                              relatedBy: .equal,
                                               toItem: self,
-                                              attribute: .CenterY,
+                                              attribute: .centerY,
                                               multiplier: 1,
                                               constant: 0);
         self.addConstraint(vtConstraint);
-        let htConstraints = NSLayoutConstraint.constraintsWithVisualFormat("|[label]|",
+        let htConstraints = NSLayoutConstraint.constraints(withVisualFormat: "|[label]|",
                                                                            options: NSLayoutFormatOptions(rawValue: 0),
                                                                            metrics: nil,
                                                                            views: ["label" : label]);
@@ -265,43 +265,43 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         //Add Left Slider button
         let lSlider = UIView();
         lSlider.translatesAutoresizingMaskIntoConstraints = false;
-        lSlider.backgroundColor = UIColor.redColor();
+        lSlider.backgroundColor = UIColor.red;
         self.addSubview(lSlider);
         self.leftSlider = lSlider;
         
         //Add Right Slider button
         let rSlider = UIView();
-        rSlider.backgroundColor = UIColor.blueColor();
+        rSlider.backgroundColor = UIColor.blue;
         rSlider.translatesAutoresizingMaskIntoConstraints = false;
         self.addSubview(rSlider);
         self.rightSlider = rSlider;
         
         //Form factor Constaints
-        let fflSlider = NSLayoutConstraint(item: lSlider, attribute: .Height, relatedBy: .Equal, toItem: lSlider, attribute: .Width, multiplier: 1, constant: 0);
-        let ffrSlider = NSLayoutConstraint(item: rSlider, attribute: .Height, relatedBy: .Equal, toItem: rSlider, attribute: .Width, multiplier: 1, constant: 0);
+        let fflSlider = NSLayoutConstraint(item: lSlider, attribute: .height, relatedBy: .equal, toItem: lSlider, attribute: .width, multiplier: 1, constant: 0);
+        let ffrSlider = NSLayoutConstraint(item: rSlider, attribute: .height, relatedBy: .equal, toItem: rSlider, attribute: .width, multiplier: 1, constant: 0);
         
         lSlider.addConstraint(fflSlider);
         rSlider.addConstraint(ffrSlider);
         
         //Left Slider Vertical Constraints
         let sliderViews = ["lSlider" : lSlider, "rSlider" : rSlider];
-        let vlConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-8-[lSlider]-8-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: sliderViews);
+        let vlConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-8-[lSlider]-8-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: sliderViews);
         for constraint in vlConstraints {
             constraint.priority = UILayoutPriorityDefaultLow;
         }
         let hlConstraint = NSLayoutConstraint(item: lSlider,
-                                              attribute: .Height,
-                                              relatedBy: .GreaterThanOrEqual,
+                                              attribute: .height,
+                                              relatedBy: .greaterThanOrEqual,
                                               toItem: nil,
-                                              attribute: .NotAnAttribute,
+                                              attribute: .notAnAttribute,
                                               multiplier: 1,
                                               constant: 44);
         hlConstraint.priority = UILayoutPriorityRequired;
         let xlConstraint = NSLayoutConstraint(item: lSlider,
-                                              attribute: .CenterY,
-                                              relatedBy: .Equal,
+                                              attribute: .centerY,
+                                              relatedBy: .equal,
                                               toItem: self,
-                                              attribute: .CenterY,
+                                              attribute: .centerY,
                                               multiplier: 1,
                                               constant: 0);
         xlConstraint.priority = UILayoutPriorityRequired;
@@ -311,23 +311,23 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         self.addConstraint(xlConstraint);
         
         //Right Slider Vertical Constraints
-        let vrConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-8-[rSlider]-8-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: sliderViews);
+        let vrConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-8-[rSlider]-8-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: sliderViews);
         for constraint in vrConstraints {
             constraint.priority = UILayoutPriorityDefaultLow;
         }
         let hrConstraint = NSLayoutConstraint(item: rSlider,
-                                              attribute: .Height,
-                                              relatedBy: .GreaterThanOrEqual,
+                                              attribute: .height,
+                                              relatedBy: .greaterThanOrEqual,
                                               toItem: nil,
-                                              attribute: .NotAnAttribute,
+                                              attribute: .notAnAttribute,
                                               multiplier: 1,
                                               constant: 44);
         hrConstraint.priority = UILayoutPriorityRequired;
         let xrConstraint = NSLayoutConstraint(item: rSlider,
-                                              attribute: .CenterY,
-                                              relatedBy: .Equal,
+                                              attribute: .centerY,
+                                              relatedBy: .equal,
                                               toItem: self,
-                                              attribute: .CenterY,
+                                              attribute: .centerY,
                                               multiplier: 1,
                                               constant: 0);
         xrConstraint.priority = UILayoutPriorityRequired;
@@ -337,8 +337,8 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         self.addConstraint(xrConstraint);
         
         //Horizontal Position Constraints
-        let plConstraint = NSLayoutConstraint(item: lSlider, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1, constant: 8);
-        let prConstraint = NSLayoutConstraint(item: rSlider, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1, constant: -8);
+        let plConstraint = NSLayoutConstraint(item: lSlider, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 8);
+        let prConstraint = NSLayoutConstraint(item: rSlider, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: -8);
         
         self.leftSliderPositionConstraint = plConstraint;
         self.rightSliderPositionConstraint = prConstraint;
@@ -358,32 +358,32 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         rSlider.addGestureRecognizer(rightGesture);
         
         //Add Images in sliders
-        let lImage = UIImageView(frame: CGRectZero);
-        lImage.backgroundColor = UIColor.clearColor();
+        let lImage = UIImageView(frame: CGRect.zero);
+        lImage.backgroundColor = UIColor.clear;
         lImage.translatesAutoresizingMaskIntoConstraints = false;
         lSlider.addSubview(lImage);
-        lImage.tintColor = UIColor.whiteColor();
+        lImage.tintColor = UIColor.white;
         self.leftImageView = lImage;
         
-        let rImage = UIImageView(frame: CGRectZero);
-        rImage.backgroundColor = UIColor.clearColor();
+        let rImage = UIImageView(frame: CGRect.zero);
+        rImage.backgroundColor = UIColor.clear;
         rImage.translatesAutoresizingMaskIntoConstraints = false;
         rSlider.addSubview(rImage);
-        rImage.tintColor = UIColor.whiteColor();
+        rImage.tintColor = UIColor.white;
         self.rightImageView = rImage;
         
         let lioConstraint = NSLayoutConstraint(item: lImage,
-                                               attribute: .CenterX,
-                                               relatedBy: .Equal,
+                                               attribute: .centerX,
+                                               relatedBy: .equal,
                                                toItem: lSlider,
-                                               attribute: .CenterX,
+                                               attribute: .centerX,
                                                multiplier: 1,
                                                constant: 0);
         let livConstraint = NSLayoutConstraint(item: lImage,
-                                                attribute: .CenterY,
-                                                relatedBy: .Equal,
+                                                attribute: .centerY,
+                                                relatedBy: .equal,
                                                 toItem: lSlider,
-                                                attribute: .CenterY,
+                                                attribute: .centerY,
                                                 multiplier: 1,
                                                 constant: 0);
         lSlider.addConstraint(lioConstraint);
@@ -391,17 +391,17 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         
         
         let rioConstraint = NSLayoutConstraint(item: rImage,
-                                               attribute: .CenterX,
-                                               relatedBy: .Equal,
+                                               attribute: .centerX,
+                                               relatedBy: .equal,
                                                toItem: rSlider,
-                                               attribute: .CenterX,
+                                               attribute: .centerX,
                                                multiplier: 1,
                                                constant: 0);
         let rivConstraint = NSLayoutConstraint(item: rImage,
-                                               attribute: .CenterY,
-                                               relatedBy: .Equal,
+                                               attribute: .centerY,
+                                               relatedBy: .equal,
                                                toItem: rSlider,
-                                               attribute: .CenterY,
+                                               attribute: .centerY,
                                                multiplier: 1,
                                                constant: 0);
         rSlider.addConstraint(rioConstraint);
@@ -409,41 +409,41 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         
     }
     
-    func setLeftImage(image: UIImage!) {
-        self.leftImageView?.image = image.imageWithRenderingMode(.AlwaysTemplate);
+    func setLeftImage(_ image: UIImage!) {
+        self.leftImageView?.image = image.withRenderingMode(.alwaysTemplate);
     }
     
-    func setRightImage(image: UIImage!) {
-        self.rightImageView?.image = image.imageWithRenderingMode(.AlwaysTemplate);
+    func setRightImage(_ image: UIImage!) {
+        self.rightImageView?.image = image.withRenderingMode(.alwaysTemplate);
     }
 
     
     //MARK: Gesture Actions
-    func leftGesture(sender:UIPanGestureRecognizer?) {
+    func leftGesture(_ sender:UIPanGestureRecognizer?) {
         if let gesture = sender {
 
-            let position = gesture.translationInView(self.leftSlider!);
+            let position = gesture.translation(in: self.leftSlider!);
 
             switch gesture.state {
-            case .Began, .Possible:
+            case .began, .possible:
                 self.gestureBegan = true;
                 break;
                 
-            case .Changed:
+            case .changed:
                 if (position.x > 8) && position.x <= self.frame.width - (self.leftSlider!.frame.width + 8) {
                     self.leftSliderPositionConstraint?.constant = position.x;
                     
-                    self.backgroundColor = self.leftColor.colorWithAlphaComponent(position.x / (self.frame.width / 6 * 5));
+                    self.backgroundColor = self.leftColor.withAlphaComponent(position.x / (self.frame.width / 6 * 5));
                 }
                 break;
                 
             default:
                 if position.x >= (self.frame.width / 6 * 5) {
                     //Success Left Slide
-                    self.sliderStatus = .LeftSuccess;
+                    self.sliderStatus = .leftSuccess;
                     
                 } else {
-                    self.sliderStatus = .Normal;
+                    self.sliderStatus = .normal;
                 }
                 self.gestureBegan = false;
                 
@@ -452,32 +452,32 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         }
     }
     
-    func rightGesture(sender:UIPanGestureRecognizer?) {
+    func rightGesture(_ sender:UIPanGestureRecognizer?) {
         if let gesture = sender {
            
-            let position = gesture.translationInView(self.rightSlider!);
+            let position = gesture.translation(in: self.rightSlider!);
             
             switch gesture.state {
-            case .Began, .Possible:
+            case .began, .possible:
                 self.gestureBegan = true;
                 //self.setNeedsLayout();
                 break;
                 
-            case .Changed:
+            case .changed:
                 if (position.x < -8) && position.x >= (self.leftSlider!.frame.width + 8) - self.frame.width {
                     self.rightSliderPositionConstraint?.constant = position.x;
                     
-                    self.backgroundColor = self.rightColor.colorWithAlphaComponent( -position.x / (self.frame.width / 6 * 5));
+                    self.backgroundColor = self.rightColor.withAlphaComponent( -position.x / (self.frame.width / 6 * 5));
                 }
                 break;
                 
             default:
                 if position.x <= (-self.frame.width / 6 * 5) {
                     //Success Right slide
-                    self.sliderStatus = .RightSuccess;
+                    self.sliderStatus = .rightSuccess;
                     
                 } else {
-                    self.sliderStatus = .Normal;
+                    self.sliderStatus = .normal;
                 }
                 self.gestureBegan = false;
                 break;
@@ -501,46 +501,46 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     }
     
     //Gesture Recognizer Delegate
-    override func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if gestureRecognizer is UIPanGestureRecognizer {
             if gestureRecognizer.view == self.leftSlider {
-                return self.sliderStatus == .LeftActive;
+                return self.sliderStatus == .leftActive;
             } else if gestureRecognizer.view == self.rightSlider {
-                return self.sliderStatus == .RightActive;
+                return self.sliderStatus == .rightActive;
             }
         }
         return false;
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let fTouch = touches.first {
             if fTouch.view == self.leftSlider  {
-                self.sliderStatus = .LeftActive;
+                self.sliderStatus = .leftActive;
             } else if fTouch.view == self.rightSlider {
-                self.sliderStatus = .RightActive;
+                self.sliderStatus = .rightActive;
             }
         }
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if gestureBegan == false {
-            self.sliderStatus = .Normal;
+            self.sliderStatus = .normal;
         }
     }
 }
 
 @objc protocol SOTSwipeControlDelegate {
     
-    optional func didSuccessSwipe(slider:SOTSwipeControl);
-    optional func didCompletedSwipe(slider:SOTSwipeControl);
+    @objc optional func didSuccessSwipe(_ slider:SOTSwipeControl);
+    @objc optional func didCompletedSwipe(_ slider:SOTSwipeControl);
     
 }
 
 enum SOTSliderStatus {
-    case Normal;
-    case LeftActive;
-    case RightActive;
-    case LeftSuccess;
-    case RightSuccess;
-    case Complete;
+    case normal;
+    case leftActive;
+    case rightActive;
+    case leftSuccess;
+    case rightSuccess;
+    case complete;
 }

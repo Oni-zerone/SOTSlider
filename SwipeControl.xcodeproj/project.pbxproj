@@ -107,6 +107,8 @@
 				TargetAttributes = {
 					97614D641D058D28003E8667 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6RS7DS4QV5;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -261,10 +263,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SliderProject/Info.plist;
+				DEVELOPMENT_TEAM = 6RS7DS4QV5;
+				INFOPLIST_FILE = "$(SRCROOT)/SwipeControl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.studiout.SliderProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -272,10 +276,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SliderProject/Info.plist;
+				DEVELOPMENT_TEAM = 6RS7DS4QV5;
+				INFOPLIST_FILE = "$(SRCROOT)/SwipeControl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.studiout.SliderProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
