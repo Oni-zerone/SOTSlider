@@ -18,10 +18,7 @@ class ViewController: UIViewController, SOTSwipeControlDelegate {
         
         self.view.backgroundColor = UIColor.white;
         slider.delegate = self;
-        
-        slider.setLeftImage(UIImage(named: "TestImage"));
-        slider.setRightImage(UIImage(named: "TestImage")?.imageFlippedForRightToLeftLayoutDirection());
-        
+                
         slider.isAsync = true;
         slider.rightEnabled = true;
     }
