@@ -12,7 +12,7 @@
 		97614D6E1D058D29003E8667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97614D6C1D058D29003E8667 /* Main.storyboard */; };
 		97614D701D058D29003E8667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97614D6F1D058D29003E8667 /* Assets.xcassets */; };
 		97614D731D058D29003E8667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97614D711D058D29003E8667 /* LaunchScreen.storyboard */; };
-		97614D7C1D058D82003E8667 /* SOTSliderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97614D7B1D058D82003E8667 /* SOTSliderControl.swift */; };
+		97614D7C1D058D82003E8667 /* SOTSwipeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97614D7B1D058D82003E8667 /* SOTSwipeControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		97614D6F1D058D29003E8667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97614D721D058D29003E8667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97614D741D058D29003E8667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97614D7B1D058D82003E8667 /* SOTSliderControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOTSliderControl.swift; sourceTree = "<group>"; };
+		97614D7B1D058D82003E8667 /* SOTSwipeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOTSwipeControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,17 +62,17 @@
 				97614D6F1D058D29003E8667 /* Assets.xcassets */,
 				97614D711D058D29003E8667 /* LaunchScreen.storyboard */,
 				97614D741D058D29003E8667 /* Info.plist */,
-				97614D7A1D058D54003E8667 /* Slider */,
+				97614D7A1D058D54003E8667 /* SwipeControl */,
 			);
 			path = SwipeControl;
 			sourceTree = "<group>";
 		};
-		97614D7A1D058D54003E8667 /* Slider */ = {
+		97614D7A1D058D54003E8667 /* SwipeControl */ = {
 			isa = PBXGroup;
 			children = (
-				97614D7B1D058D82003E8667 /* SOTSliderControl.swift */,
+				97614D7B1D058D82003E8667 /* SOTSwipeControl.swift */,
 			);
-			name = Slider;
+			path = SwipeControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97614D7C1D058D82003E8667 /* SOTSliderControl.swift in Sources */,
+				97614D7C1D058D82003E8667 /* SOTSwipeControl.swift in Sources */,
 				97614D6B1D058D28003E8667 /* ViewController.swift in Sources */,
 				97614D691D058D28003E8667 /* AppDelegate.swift in Sources */,
 			);
