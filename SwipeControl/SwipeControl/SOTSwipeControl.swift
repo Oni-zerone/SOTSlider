@@ -245,9 +245,10 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     fileprivate weak var leftSliderPositionConstraint:NSLayoutConstraint?;
     fileprivate weak var rightSliderPositionConstraint:NSLayoutConstraint?;
     
+    //MARK: initialization
+    
     required override init(frame: CGRect) {
         super.init(frame:frame);
-        translatesAutoresizingMaskIntoConstraints = false;
         
         setupLayout();
     }
@@ -259,10 +260,8 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
-        translatesAutoresizingMaskIntoConstraints = false;
         
         setupLayout();
-        
     }
     
     func setupLayout() {
@@ -438,6 +437,7 @@ class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
         rSlider.addConstraint(rioConstraint);
         rSlider.addConstraint(rivConstraint);
         
+        self.setNeedsLayout();
     }
     
     func setLeftImage(_ image: UIImage!) {

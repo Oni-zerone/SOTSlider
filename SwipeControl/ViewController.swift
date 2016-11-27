@@ -20,10 +20,10 @@ class ViewController: UIViewController, SOTSwipeControlDelegate {
         slider.delegate = self;
         
         slider.setLeftImage(UIImage(named: "TestImage"));
-        slider.setRightImage(UIImage(named: "TestImage"));
+        slider.setRightImage(UIImage(named: "TestImage")?.imageFlippedForRightToLeftLayoutDirection());
         
         slider.isAsync = true;
-        slider.rightEnabled = false;
+        slider.rightEnabled = true;
     }
 
     override func didReceiveMemoryWarning() {
