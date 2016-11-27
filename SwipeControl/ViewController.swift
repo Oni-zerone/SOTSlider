@@ -42,7 +42,7 @@ class ViewController: UIViewController, SOTSwipeControlDelegate {
         }));
         
         self.present(alert, animated: true) {
-            //POBA!
+            //DO NOTHING.
         };
         
     }
