@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, SOTSliderControlDelegate {
+class ViewController: UIViewController, SOTSwipeControlDelegate {
 
-    @IBOutlet weak var slider: SOTSliderControl!
+    @IBOutlet weak var slider: SOTSwipeControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ViewController: UIViewController, SOTSliderControlDelegate {
 
     //MARK: Slide Delegate
     
-    func didSuccessSwipe(slider: SOTSliderControl) {
+    func didSuccessSwipe(slider: SOTSwipeControl) {
         let alertText = slider.sliderStatus == .LeftSuccess ? "Left swipe with success!" : "Right swipe with success!";
         
         let alert = UIAlertController(title: "Completed swipe with Success!", message: alertText, preferredStyle: .Alert);

@@ -1,5 +1,5 @@
 //
-//  SOTSliderControl.swift
+//  SOTSwipeControl.swift
 //  SliderProject
 //
 //  Created by Andrea Altea on 06/06/16.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class SOTSliderControl: UIView, UIGestureRecognizerDelegate {
+class SOTSwipeControl: UIView, UIGestureRecognizerDelegate {
     
     //Model
-    weak var delegate:SOTSliderControlDelegate?;
+    weak var delegate:SOTSwipeControlDelegate?;
     
     var leftColor:UIColor = UIColor.redColor() {
         didSet {
@@ -85,13 +85,13 @@ class SOTSliderControl: UIView, UIGestureRecognizerDelegate {
                 switch self.sliderStatus {
                 case .RightSuccess, .LeftSuccess:
                     self.userInteractionEnabled = false;
-                    if delegate.respondsToSelector(#selector(SOTSliderControlDelegate.didSuccessSwipe(_:))) {
-                        delegate.performSelector(#selector(SOTSliderControlDelegate.didSuccessSwipe(_:)), withObject: self);
+                    if delegate.respondsToSelector(#selector(SOTSwipeControlDelegate.didSuccessSwipe(_:))) {
+                        delegate.performSelector(#selector(SOTSwipeControlDelegate.didSuccessSwipe(_:)), withObject: self);
                     }
                     break;
                 case .Complete:
-                    if delegate.respondsToSelector(#selector(SOTSliderControlDelegate.didCompletedSwipe(_:))) {
-                        delegate.performSelector(#selector(SOTSliderControlDelegate.didCompletedSwipe(_:)), withObject: self);
+                    if delegate.respondsToSelector(#selector(SOTSwipeControlDelegate.didCompletedSwipe(_:))) {
+                        delegate.performSelector(#selector(SOTSwipeControlDelegate.didCompletedSwipe(_:)), withObject: self);
                     }
                     break;
                     
@@ -347,11 +347,11 @@ class SOTSliderControl: UIView, UIGestureRecognizerDelegate {
         self.addConstraint(prConstraint);
         
         //Add Gestures
-        let leftGesture = UIPanGestureRecognizer(target: self, action: #selector(SOTSliderControl.leftGesture(_:)));
+        let leftGesture = UIPanGestureRecognizer(target: self, action: #selector(SOTSwipeControl.leftGesture(_:)));
         leftGesture.minimumNumberOfTouches = 1;
         leftGesture.delaysTouchesBegan = false;
         leftGesture.delegate = self;
-        let rightGesture = UIPanGestureRecognizer(target: self, action: #selector(SOTSliderControl.rightGesture(_:)));
+        let rightGesture = UIPanGestureRecognizer(target: self, action: #selector(SOTSwipeControl.rightGesture(_:)));
         rightGesture.delegate = self;
         
         lSlider.addGestureRecognizer(leftGesture);
@@ -529,10 +529,10 @@ class SOTSliderControl: UIView, UIGestureRecognizerDelegate {
     }
 }
 
-@objc protocol SOTSliderControlDelegate {
+@objc protocol SOTSwipeControlDelegate {
     
-    optional func didSuccessSwipe(slider:SOTSliderControl);
-    optional func didCompletedSwipe(slider:SOTSliderControl);
+    optional func didSuccessSwipe(slider:SOTSwipeControl);
+    optional func didCompletedSwipe(slider:SOTSwipeControl);
     
 }
 
