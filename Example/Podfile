@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SOTSwipeControl_Example' do
+  pod 'SOTSwipeControl', :path => '../'
+
+  target 'SOTSwipeControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

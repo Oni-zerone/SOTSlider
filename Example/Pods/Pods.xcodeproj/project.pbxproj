@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BBF38C6E799D56E8F0576BEE9EBE86C /* Pods-SOTSwipeControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C141460FCF273118859D533D93C2140F /* Pods-SOTSwipeControl_Tests-dummy.m */; };
+		48B5939F146C198D185312E1D94CBF49 /* Pods-SOTSwipeControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5BF1E14E061FF0AE5B93AC93EAB4C3F /* Pods-SOTSwipeControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590932CBFA618953334022C5CE771400 /* Pods-SOTSwipeControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 117CB4D8D961026A23718DEF9C60953E /* Pods-SOTSwipeControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FE108259B8242150E358BB699A1BA46 /* SOTSwipeControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7411B58C7F369F1423250D04DFA6F40 /* SOTSwipeControl-dummy.m */; };
+		7BE5895B20A73DE5FBF8600AB59E1282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AA109EB09AD102CF1B713D6E75A18397 /* SOTSwipeControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF86FE38AA7EC4F2E95AF29D2897FCD /* SOTSwipeControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5ECE608A2BF157221F438D3A35067A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DD13CD72AD9E18AA2FC360C917C4E6D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F44607F72B79F90808E8395BB41AB8A6 /* Pods-SOTSwipeControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DC6E54012D936938D23F9A203FB9CA /* Pods-SOTSwipeControl_Example-dummy.m */; };
+		F7ADE62ABFCA973E89494C5A835337DF /* SwipeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C452527D6CF524A8262A1DC5E631FD /* SwipeControl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38CB8E706084D463518BE7FE5ABB8C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9E7DE862FF74AEEF616B024D489E69;
+			remoteInfo = SOTSwipeControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08361962952D51F9ABE0795435B87DDE /* Pods-SOTSwipeControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SOTSwipeControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F4CE8BD71245949514E252FBD137D93 /* Pods-SOTSwipeControl_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SOTSwipeControl_Example-resources.sh"; sourceTree = "<group>"; };
+		117CB4D8D961026A23718DEF9C60953E /* Pods-SOTSwipeControl_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SOTSwipeControl_Tests-umbrella.h"; sourceTree = "<group>"; };
+		13A700B16A50FFA2DF770DE6472713F2 /* SOTSwipeControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTSwipeControl.xcconfig; sourceTree = "<group>"; };
+		1BF86FE38AA7EC4F2E95AF29D2897FCD /* SOTSwipeControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTSwipeControl-umbrella.h"; sourceTree = "<group>"; };
+		2115482B93D5B5E51CDAF9DE5F045D3F /* Pods-SOTSwipeControl_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SOTSwipeControl_Tests-resources.sh"; sourceTree = "<group>"; };
+		28082FB75C6CDAB56232BA89EEE4C1BA /* Pods-SOTSwipeControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SOTSwipeControl_Example.modulemap"; sourceTree = "<group>"; };
+		3E9C0163EADC6594B27B4FDF617596FF /* Pods-SOTSwipeControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SOTSwipeControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		59E234376C40C085554255F1978671D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FFE9F619E6C9EA086E0B92786E3357C /* Pods-SOTSwipeControl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SOTSwipeControl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		66F4F47DEB035C8F5FC30B07EFE7BBE0 /* Pods-SOTSwipeControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SOTSwipeControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6BD05E9E31141AC66920CA131EB595A6 /* Pods-SOTSwipeControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SOTSwipeControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC90245FA370E7D923C8DAB3F34193E /* SOTSwipeControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTSwipeControl-prefix.pch"; sourceTree = "<group>"; };
+		730FC468154CBA4E00D557405B0E9094 /* Pods-SOTSwipeControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SOTSwipeControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		75AD6669911A32BF077737F40452B144 /* SOTSwipeControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SOTSwipeControl.modulemap; sourceTree = "<group>"; };
+		87FCA588C05AE887B12C8C63945457AD /* SOTSwipeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SOTSwipeControl.framework; path = SOTSwipeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		896096E673F880E37A20E23987FBB26D /* Pods-SOTSwipeControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SOTSwipeControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C87F1833382B5A96B34B09999E5BD6C /* Pods-SOTSwipeControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SOTSwipeControl_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9613814C7F4C030763B64D8747E37B58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		997CD389CC22A33BC5FCF1B3E4FEBEA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB99BBE806CEE6CF8B0647C8EA70B88 /* Pods-SOTSwipeControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SOTSwipeControl_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AE0F3FE94EF25FA45A551AA21FE185B0 /* Pods_SOTSwipeControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SOTSwipeControl_Example.framework; path = "Pods-SOTSwipeControl_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81F52916C43EE73317E2781B0BFA3FC /* Pods-SOTSwipeControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SOTSwipeControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C141460FCF273118859D533D93C2140F /* Pods-SOTSwipeControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SOTSwipeControl_Tests-dummy.m"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DCD530BB057CEEC4E874ABE4B1FB4319 /* Pods-SOTSwipeControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SOTSwipeControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E4C452527D6CF524A8262A1DC5E631FD /* SwipeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeControl.swift; sourceTree = "<group>"; };
+		E5BF1E14E061FF0AE5B93AC93EAB4C3F /* Pods-SOTSwipeControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SOTSwipeControl_Example-umbrella.h"; sourceTree = "<group>"; };
+		E5DC6E54012D936938D23F9A203FB9CA /* Pods-SOTSwipeControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SOTSwipeControl_Example-dummy.m"; sourceTree = "<group>"; };
+		E7411B58C7F369F1423250D04DFA6F40 /* SOTSwipeControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SOTSwipeControl-dummy.m"; sourceTree = "<group>"; };
+		FF336376ECE5B3EF767B9646E262C58B /* Pods_SOTSwipeControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SOTSwipeControl_Tests.framework; path = "Pods-SOTSwipeControl_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90189665C5AD87BD4B94E08994628494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE5895B20A73DE5FBF8600AB59E1282 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A77B169F7D81BA85572553D8BD4549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ECE608A2BF157221F438D3A35067A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4929657AA03A72896506BB193C411F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD13CD72AD9E18AA2FC360C917C4E6D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1826B14EDB2302A41A0A77B25F79576A /* SOTSwipeControl */ = {
+			isa = PBXGroup;
+			children = (
+				EF6C4FC5262A228389A0EAA9CF079680 /* Classes */,
+			);
+			name = SOTSwipeControl;
+			path = SOTSwipeControl;
+			sourceTree = "<group>";
+		};
+		3145ECDB30479EE475B7B8C98B222670 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8002C4893BFF9D6A59DC711143B066F1 /* Pods-SOTSwipeControl_Example */,
+				46EDDD3F6F47AA92D2E363E73C781177 /* Pods-SOTSwipeControl_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		46EDDD3F6F47AA92D2E363E73C781177 /* Pods-SOTSwipeControl_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				997CD389CC22A33BC5FCF1B3E4FEBEA1 /* Info.plist */,
+				8C87F1833382B5A96B34B09999E5BD6C /* Pods-SOTSwipeControl_Tests.modulemap */,
+				08361962952D51F9ABE0795435B87DDE /* Pods-SOTSwipeControl_Tests-acknowledgements.markdown */,
+				5FFE9F619E6C9EA086E0B92786E3357C /* Pods-SOTSwipeControl_Tests-acknowledgements.plist */,
+				C141460FCF273118859D533D93C2140F /* Pods-SOTSwipeControl_Tests-dummy.m */,
+				730FC468154CBA4E00D557405B0E9094 /* Pods-SOTSwipeControl_Tests-frameworks.sh */,
+				2115482B93D5B5E51CDAF9DE5F045D3F /* Pods-SOTSwipeControl_Tests-resources.sh */,
+				117CB4D8D961026A23718DEF9C60953E /* Pods-SOTSwipeControl_Tests-umbrella.h */,
+				6BD05E9E31141AC66920CA131EB595A6 /* Pods-SOTSwipeControl_Tests.debug.xcconfig */,
+				3E9C0163EADC6594B27B4FDF617596FF /* Pods-SOTSwipeControl_Tests.release.xcconfig */,
+			);
+			name = "Pods-SOTSwipeControl_Tests";
+			path = "Target Support Files/Pods-SOTSwipeControl_Tests";
+			sourceTree = "<group>";
+		};
+		6DBD3CB95435A86DFF1192520B4D4395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F3FE94EF25FA45A551AA21FE185B0 /* Pods_SOTSwipeControl_Example.framework */,
+				FF336376ECE5B3EF767B9646E262C58B /* Pods_SOTSwipeControl_Tests.framework */,
+				87FCA588C05AE887B12C8C63945457AD /* SOTSwipeControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8EA5E7049720497D210F282486CAD7CC /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6DBD3CB95435A86DFF1192520B4D4395 /* Products */,
+				3145ECDB30479EE475B7B8C98B222670 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8002C4893BFF9D6A59DC711143B066F1 /* Pods-SOTSwipeControl_Example */ = {
+			isa = PBXGroup;
+			children = (
+				59E234376C40C085554255F1978671D9 /* Info.plist */,
+				28082FB75C6CDAB56232BA89EEE4C1BA /* Pods-SOTSwipeControl_Example.modulemap */,
+				896096E673F880E37A20E23987FBB26D /* Pods-SOTSwipeControl_Example-acknowledgements.markdown */,
+				B81F52916C43EE73317E2781B0BFA3FC /* Pods-SOTSwipeControl_Example-acknowledgements.plist */,
+				E5DC6E54012D936938D23F9A203FB9CA /* Pods-SOTSwipeControl_Example-dummy.m */,
+				ADB99BBE806CEE6CF8B0647C8EA70B88 /* Pods-SOTSwipeControl_Example-frameworks.sh */,
+				0F4CE8BD71245949514E252FBD137D93 /* Pods-SOTSwipeControl_Example-resources.sh */,
+				E5BF1E14E061FF0AE5B93AC93EAB4C3F /* Pods-SOTSwipeControl_Example-umbrella.h */,
+				DCD530BB057CEEC4E874ABE4B1FB4319 /* Pods-SOTSwipeControl_Example.debug.xcconfig */,
+				66F4F47DEB035C8F5FC30B07EFE7BBE0 /* Pods-SOTSwipeControl_Example.release.xcconfig */,
+			);
+			name = "Pods-SOTSwipeControl_Example";
+			path = "Target Support Files/Pods-SOTSwipeControl_Example";
+			sourceTree = "<group>";
+		};
+		8EA5E7049720497D210F282486CAD7CC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C54D19829A8DF6E1EB00CDAD3A167515 /* SOTSwipeControl */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BB7CC3AE55FCA5A8308E065134387418 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9613814C7F4C030763B64D8747E37B58 /* Info.plist */,
+				75AD6669911A32BF077737F40452B144 /* SOTSwipeControl.modulemap */,
+				13A700B16A50FFA2DF770DE6472713F2 /* SOTSwipeControl.xcconfig */,
+				E7411B58C7F369F1423250D04DFA6F40 /* SOTSwipeControl-dummy.m */,
+				6EC90245FA370E7D923C8DAB3F34193E /* SOTSwipeControl-prefix.pch */,
+				1BF86FE38AA7EC4F2E95AF29D2897FCD /* SOTSwipeControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SOTSwipeControl";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C54D19829A8DF6E1EB00CDAD3A167515 /* SOTSwipeControl */ = {
+			isa = PBXGroup;
+			children = (
+				1826B14EDB2302A41A0A77B25F79576A /* SOTSwipeControl */,
+				BB7CC3AE55FCA5A8308E065134387418 /* Support Files */,
+			);
+			name = SOTSwipeControl;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EF6C4FC5262A228389A0EAA9CF079680 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E4C452527D6CF524A8262A1DC5E631FD /* SwipeControl.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52ACC5777E185C7C5D8A4EE31B2DBDB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B5939F146C198D185312E1D94CBF49 /* Pods-SOTSwipeControl_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659ABCB72534825B8A583052F9064839 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590932CBFA618953334022C5CE771400 /* Pods-SOTSwipeControl_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C1FB18521CB75830A6381E2BB1B980 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA109EB09AD102CF1B713D6E75A18397 /* SOTSwipeControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E47A3D274A975CC4D47FC9BB23C7CA8 /* Pods-SOTSwipeControl_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17FCD4ADFDB2C86B43301547FAB62E37 /* Build configuration list for PBXNativeTarget "Pods-SOTSwipeControl_Example" */;
+			buildPhases = (
+				D64DF98E0BDBF959F1EB053C79403382 /* Sources */,
+				E6A77B169F7D81BA85572553D8BD4549 /* Frameworks */,
+				52ACC5777E185C7C5D8A4EE31B2DBDB1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0537FB0A4A0EE28432AFBE24A3BD825B /* PBXTargetDependency */,
+			);
+			name = "Pods-SOTSwipeControl_Example";
+			productName = "Pods-SOTSwipeControl_Example";
+			productReference = AE0F3FE94EF25FA45A551AA21FE185B0 /* Pods_SOTSwipeControl_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A360D3CD28378C1981B1305B49CFE690 /* Pods-SOTSwipeControl_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576FAB27D24FBCF9A3B3A63A41EF881D /* Build configuration list for PBXNativeTarget "Pods-SOTSwipeControl_Tests" */;
+			buildPhases = (
+				52791DC1508D4F2E671FBD42ACA2288F /* Sources */,
+				90189665C5AD87BD4B94E08994628494 /* Frameworks */,
+				659ABCB72534825B8A583052F9064839 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SOTSwipeControl_Tests";
+			productName = "Pods-SOTSwipeControl_Tests";
+			productReference = FF336376ECE5B3EF767B9646E262C58B /* Pods_SOTSwipeControl_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE9E7DE862FF74AEEF616B024D489E69 /* SOTSwipeControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDC96C8DAEFF8FCB07DBA94AAFBE5D1 /* Build configuration list for PBXNativeTarget "SOTSwipeControl" */;
+			buildPhases = (
+				6871236790A41B40F6AB80B21D2D8F62 /* Sources */,
+				FF4929657AA03A72896506BB193C411F /* Frameworks */,
+				C9C1FB18521CB75830A6381E2BB1B980 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOTSwipeControl;
+			productName = SOTSwipeControl;
+			productReference = 87FCA588C05AE887B12C8C63945457AD /* SOTSwipeControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6DBD3CB95435A86DFF1192520B4D4395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E47A3D274A975CC4D47FC9BB23C7CA8 /* Pods-SOTSwipeControl_Example */,
+				A360D3CD28378C1981B1305B49CFE690 /* Pods-SOTSwipeControl_Tests */,
+				CE9E7DE862FF74AEEF616B024D489E69 /* SOTSwipeControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52791DC1508D4F2E671FBD42ACA2288F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBF38C6E799D56E8F0576BEE9EBE86C /* Pods-SOTSwipeControl_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6871236790A41B40F6AB80B21D2D8F62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE108259B8242150E358BB699A1BA46 /* SOTSwipeControl-dummy.m in Sources */,
+				F7ADE62ABFCA973E89494C5A835337DF /* SwipeControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64DF98E0BDBF959F1EB053C79403382 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44607F72B79F90808E8395BB41AB8A6 /* Pods-SOTSwipeControl_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0537FB0A4A0EE28432AFBE24A3BD825B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SOTSwipeControl;
+			target = CE9E7DE862FF74AEEF616B024D489E69 /* SOTSwipeControl */;
+			targetProxy = 38CB8E706084D463518BE7FE5ABB8C1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1749D2CBDFE264A7E41C9953CE6A5D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A700B16A50FFA2DF770DE6472713F2 /* SOTSwipeControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SOTSwipeControl/SOTSwipeControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SOTSwipeControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SOTSwipeControl/SOTSwipeControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SOTSwipeControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52DAA542C2D7F473FF1DE258D60440E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F4F47DEB035C8F5FC30B07EFE7BBE0 /* Pods-SOTSwipeControl_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SOTSwipeControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SOTSwipeControl_Example/Pods-SOTSwipeControl_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SOTSwipeControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77D5DE1E548682E7F8FC42B82F53977B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E9C0163EADC6594B27B4FDF617596FF /* Pods-SOTSwipeControl_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SOTSwipeControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SOTSwipeControl_Tests/Pods-SOTSwipeControl_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SOTSwipeControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96DFEF27B58D0FD4E776AF887FC27121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD05E9E31141AC66920CA131EB595A6 /* Pods-SOTSwipeControl_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SOTSwipeControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SOTSwipeControl_Tests/Pods-SOTSwipeControl_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SOTSwipeControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BC140CB00C9F6DF6EAD2C83BA871114A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A700B16A50FFA2DF770DE6472713F2 /* SOTSwipeControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SOTSwipeControl/SOTSwipeControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SOTSwipeControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SOTSwipeControl/SOTSwipeControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SOTSwipeControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FED19078082A82304A0F967A8926ACCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD530BB057CEEC4E874ABE4B1FB4319 /* Pods-SOTSwipeControl_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SOTSwipeControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SOTSwipeControl_Example/Pods-SOTSwipeControl_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SOTSwipeControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17FCD4ADFDB2C86B43301547FAB62E37 /* Build configuration list for PBXNativeTarget "Pods-SOTSwipeControl_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED19078082A82304A0F967A8926ACCA /* Debug */,
+				52DAA542C2D7F473FF1DE258D60440E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576FAB27D24FBCF9A3B3A63A41EF881D /* Build configuration list for PBXNativeTarget "Pods-SOTSwipeControl_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DFEF27B58D0FD4E776AF887FC27121 /* Debug */,
+				77D5DE1E548682E7F8FC42B82F53977B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDC96C8DAEFF8FCB07DBA94AAFBE5D1 /* Build configuration list for PBXNativeTarget "SOTSwipeControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1749D2CBDFE264A7E41C9953CE6A5D0E /* Debug */,
+				BC140CB00C9F6DF6EAD2C83BA871114A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
