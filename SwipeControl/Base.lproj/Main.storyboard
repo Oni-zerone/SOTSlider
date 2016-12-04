@@ -28,6 +28,22 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="hUC-W5-afV"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightColor">
+                                        <color key="value" red="0.027450980390000001" green="0.83137254900000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalText" value="Swishhh"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftSwipeText" value="Left to the right"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightSwipeText" value="Right to the left"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="RightImage"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="LeftImage"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,4 +61,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="LeftImage" width="31" height="30"/>
+        <image name="RightImage" width="26" height="26"/>
+    </resources>
 </document>
