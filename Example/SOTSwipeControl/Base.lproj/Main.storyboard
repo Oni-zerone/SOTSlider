@@ -28,6 +28,24 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="NLT-lG-Haq"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftColor">
+                                        <color key="value" red="0.050980392159999999" green="0.85098039219999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalText" value="Please swipe"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftSwipeText" value="Swiping Left"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftSuccessText" value="Left Success"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightSwipeText" value="Swiping Right"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightSuccessText" value="Right Success"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
