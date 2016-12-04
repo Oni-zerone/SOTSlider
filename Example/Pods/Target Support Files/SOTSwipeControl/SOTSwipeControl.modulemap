@@ -1,0 +1,6 @@
+framework module SOTSwipeControl {
+  umbrella header "SOTSwipeControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

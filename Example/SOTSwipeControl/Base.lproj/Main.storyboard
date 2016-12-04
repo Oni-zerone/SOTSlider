@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SOTSwipeControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPW-6Z-fjW" customClass="SwipeControl" customModule="SOTSwipeControl">
+                                <rect key="frame" x="16" y="572" width="343" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="NLT-lG-Haq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftColor">
+                                        <color key="value" red="0.050980392159999999" green="0.85098039219999999" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalText" value="Please swipe"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftSwipeText" value="Swiping Left"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftSuccessText" value="Left Success"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightSwipeText" value="Swiping Right"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightSuccessText" value="Right Success"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OPW-6Z-fjW" secondAttribute="trailing" id="MsR-sH-Syd"/>
+                            <constraint firstItem="OPW-6Z-fjW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="lx7-YI-G7E"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OPW-6Z-fjW" secondAttribute="bottom" constant="15" id="qYI-Xd-c1H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="OPW-6Z-fjW" id="dPL-zG-Sew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

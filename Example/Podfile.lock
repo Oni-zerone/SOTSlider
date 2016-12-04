@@ -1,0 +1,16 @@
+PODS:
+  - SOTSwipeControl (1.2.0)
+
+DEPENDENCIES:
+  - SOTSwipeControl (from `../`)
+
+EXTERNAL SOURCES:
+  SOTSwipeControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SOTSwipeControl: c08fccbb76b6e6bfb2affbc4eaa416364d878915
+
+PODFILE CHECKSUM: e5b9ac6abece68e14d8050b768cd0362b891ce03
+
+COCOAPODS: 1.1.1

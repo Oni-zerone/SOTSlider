@@ -1,0 +1,26 @@
+{
+  "name": "SOTSwipeControl",
+  "version": "1.2.0",
+  "summary": "A simple control to swipe.",
+  "description": "A simple and customizable control who permits you to enable two swipe actions one from the left and one from the right.",
+  "homepage": "https://github.com/Oni-zerone/SwipeControl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Oni_01": "oni.zerone@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Oni-zerone/SwipeControl.git",
+    "tag": "1.2.0"
+  },
+  "social_media_url": "https://twitter.com/oni_zerone",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SOTSwipeControl/Classes/**/*",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "3"
+  }
+}
